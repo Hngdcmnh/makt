@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:lottie/lottie.dart';
 
@@ -123,7 +122,19 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 ),
               ),
               ElevatedButton(onPressed: () {}, child: Text('Đăng nhập')),
-              TextButton(onPressed: () {}, child: Text('Xem dữ liệu demo'))
+              TextButton(onPressed: () {}, child: Text('Xem dữ liệu demo')),
+              InkWell(
+                onTap: () {
+                  print("tapped");
+                },
+                child: Center(
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.orange,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
